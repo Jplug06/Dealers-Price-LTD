@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone - Dealers Price LTD</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <p>Dealers Price LTD</p>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="iphones.html" class="active">iPhone</a></li>
+                    <li><a href="laptops.html">Laptops</a></li>
+                    <li><a href="accessories.html">Accessories</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li>
+        <div class="header-icons">
+            <a href="#" id="search-icon"><i class="fas fa-search"></i></a>
+            <a href="cart.html" id="cart-icon"><i class="fas fa-shopping-cart"></i><span id="cart-count">0</span></a>
+        </div>
+    </li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>UK Used iPhones</h1>
+                <p>Premium quality used iPhones at great prices</p>
+                <p class="currency-note">All prices in Ghana Cedis (₵)</p>
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="container">
+                <div class="product-grid">
+                    <!-- iPhone 16 Series -->
+                    <div class="product-card featured">
+                        <div class="product-badge">Latest</div>
+                        <img src="iPhone 16 Pro Max.jpg" alt="iPhone 16 Pro Max">
+                        <h3>iPhone 16 Pro Max</h3>
+                        <div class="storage-options">
+                            <div class="storage-option">
+                                <span class="storage">256GB</span>
+                                <span class="price">₵22,800</span>
+                            </div>
+                            <div class="storage-option">
+                                <span class="storage">512GB</span>
+                                <span class="price">₵26,400</span>
+                            </div>
+                            <div class="storage-option">
+                                <span class="storage">1TB</span>
+                                <span class="price">₵28,500</span>
+                            </div>
+                        </div>
+                        <p class="description">6.9" display, A18 Pro chip, Pro camera system</p>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="showStorageModal('iphone-16-pro-max', 'iPhone 16 Pro Max', [{'256GB': 22800}, {'512GB': 26400}, {'1TB': 28500}])">Select Storage</button>
+                            <button class="btn-secondary" onclick="viewProduct('iphone-16-pro-max')">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card featured">
+                        <div class="product-badge">Latest</div>
+                        <img src="iPhone 16 Pro.jpg" alt="iPhone 16 Pro">
+                        <h3>iPhone 16 Pro</h3>
+                        <div class="storage-options">
+                            <div class="storage-option">
+                                <span class="storage">256GB</span>
+                                <span class="price">₵20,200</span>
+                            </div>
+                        </div>
+                        <p class="description">6.3" display, A18 Pro chip, Pro camera system</p>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="addToCart('iphone-16-pro-256gb', 'iPhone 16 Pro (256GB)', 20200)">Add to Cart</button>
+                            <button class="btn-secondary" onclick="viewProduct('iphone-16-pro')">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card featured">
+                        <div class="product-badge">Latest</div>
+                        <img src="iPhone 16 Plus.jpg" alt="iPhone 16 Plus">
+                        <h3>iPhone 16 Plus</h3>
+                        <div class="storage-options">
+                            <div class="storage-option">
+                                <span class="storage">128GB</span>
+                                <span class="price">₵16,800</span>
+                            </div>
+                            <div class="storage-option">
+                                <span class="storage">256GB</span>
+                                <span class="price">₵18,800</span>
+                            </div>
+                        </div>
+                        <p class="description">6.7" display, A18 chip, Advanced camera system</p>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="showStorageModal('iphone-16-plus', 'iPhone 16 Plus', [{'128GB': 16800}, {'256GB': 18800}])">Select Storage</button>
+                            <button class="btn-secondary" onclick="viewProduct('iphone-16-plus')">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card featured">
+                        <div class="product-badge">Latest</div>
+                        <img src="iPhone 16.jpg" alt="iPhone 16">
+                        <h3>iPhone 16</h3>
+                        <div class="storage-options">
+                            <div class="storage-option">
+                                <span class="storage">128GB</span>
+                                <span class="price">₵16,800</span>
+                            </div>
+                            <div class="storage-option">
+                                <span class="storage">256GB</span>
+                                <span class="price">₵18,700</span>
+                            </div>
+                        </div>
+                        <p class="description">6.1" display, A18 chip, Advanced camera system</p>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="showStorageModal('iphone-16', 'iPhone 16', [{'128GB': 16800}, {'256GB': 18700}])">Select Storage</button>
+                            <button class="btn-secondary" onclick="viewProduct('iphone-16')">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- iPhone 15 Series -->
+                    <div class="product-card">
+                        <img src="iPhone 15 Pro Max.jpg" alt="iPhone 15 Pro Max">
+                        <h3>iPhone 15 Pro Max</h3>
+                        <div class="storage-options">
+                            <div class="storage-option">
+                                <span class="storage">128GB</span>
+                                <span class="price">₵19,200</span>
+                            </div>
+                        </div>
+                        <p class="description">6.7" display, A17 Pro chip, Titanium design</p>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="addToCart('iphone-15-pro-max-128gb', 'iPhone 15 Pro Max (128GB)', 19200)">Add to Cart</button>
+                            <button class="btn-secondary" onclick="viewProduct('iphone-15-pro-max')">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="iPhone 15 Pro.jpg" alt="iPhone 15 Pro">
+                        <h3>iPhone 15 Pro</h3>
+                        <div class="storage-options">
+                            <div class="storage-option">
+                                <span class="storage">128GB</span>
+                                <span class="price">₵16,200</span>
+                            </div>
+                            <div class="storage-option">
+                                <span class="storage">256GB</span>
+                                <span class="price">₵17,100</span>
+                            </div>
+                        </div>
+                        <p class="description">6.1" display, A17 Pro chip, Titanium design</p>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="showStorageModal('iphone-15-pro', 'iPhone 15 Pro', [{'128GB': 16200}, {'256GB': 17100}])">Select Storage</button>
+                            <button class="btn-secondary" onclick="viewProduct('iphone-15-pro')">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="iPhone 15.jpg" alt="iPhone 15">
+                        <h3>iPhone 15</h3>
+                        <div class="storage-options">
+                            <div class="storage-option">
+                                <span class="storage">128GB</span>
+                                <span class="price">₵10,800</span>
+                            </div>
+                            <div class="storage-option">
+                                <span class="storage">256GB</span>
+                                <span class="price">₵11,000</span>
+                            </div>
+                        </div>
+                        <p class="description">6.1" display, A16 Bionic chip, USB-C</p>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="showStorageModal('iphone-15', 'iPhone 15', [{'128GB': 10800}, {'256GB': 11000}])">Select Storage</button>
+                            <button class="btn-secondary" onclick="viewProduct('iphone-15')">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- iPhone 14 Series -->
+                    <div class="product-card">
+                        <img src="iPhone 14 Pro Max.jpg" alt="iPhone 14 Pro Max">
+                        <h3>iPhone 14 Pro Max</h3>
+                        <div class="storage-options">
+                            <div class="storage-option">
+                                <span class="storage">128GB</span>
+                                <span class="price">₵13,000</span>
+                            </div>
+                            <div class="storage-option">
+                                <span class="storage">256GB</span>
+                                <span class="price">₵14,000</span>
+                            </div>
+                        </div>
+                        <p class="description">6.7" display, A16 Bionic chip, Dynamic Island</p>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="showStorageModal('iphone-14-pro-max', 'iPhone 14 Pro Max', [{'128GB': 13000}, {'256GB': 14000}])">Select Storage</button>
+                            <button class="btn-secondary" onclick="viewProduct('iphone-14-pro-max')">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="iPhone 14 Pro.jpg" alt="iPhone 14 Pro">
+                        <h3>iPhone 14 Pro</h3>
+                        <div class="storage-options">
+                            <div class="storage-option">
+                                <span class="storage">128GB</span>
+                                <span class="price">₵10,900</span>
+                            </div>
+                            <div class="storage-option">
+                                <span class="storage">256GB</span>
+                                <span class="price">₵12,000</span>
+                            </div>
+                        </div>
+                        <p class="description">6.1" display, A16 Bionic chip, Dynamic Island</p>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="showStorageModal('iphone-14-pro', 'iPhone 14 Pro', [{'128GB': 10900}, {'256GB': 12000}])">Select Storage</button>
+                            <button class="btn-secondary" onclick="viewProduct('iphone-14-pro')">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="iPhone 14 Plus.jpg" alt="iPhone 14 Plus">
+                        <h3>iPhone 14 Plus</h3>
+                        <div class="storage-options">
+                            <div class="storage-option">
+                                <span class="storage">128GB</span>
+                                <span class="price">₵8,700</span>
+                            </div>
+                            <div class="storage-option">
+                                <span class="storage">256GB</span>
+                                <span class="price">₵9,200</span>
+                            </div>
+                        </div>
+                        <p class="description">6.7" display, A15 Bionic chip, Dual camera</p>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="showStorageModal('iphone-14-plus', 'iPhone 14 Plus', [{'128GB': 8700}, {'256GB': 9200}])">Select Storage</button>
+                            <button class="btn-secondary" onclick="viewProduct('iphone-14-plus')">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- iPhone 13 Series -->
+                    <div class="product-card">
+                        <img src="iPhone 13 Pro.jpg" alt="iPhone 13 Pro Max">
+                        <h3>iPhone 13 Pro Max</h3>
+                        <div class="storage-options">
+                            <div class="storage-option">
+                                <span class="storage">128GB</span>
+                                <span class="price">₵8,700</span>
+                            </div>
+                            <div class="storage-option">
+                                <span class="storage">256GB</span>
+                                <span class="price">₵8,900</span>
+                            </div>
+                        </div>
+                        <p class="description">6.7" display, A15 Bionic chip, ProMotion</p>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="showStorageModal('iphone-13-pro-max', 'iPhone 13 Pro Max', [{'128GB': 8700}, {'256GB': 8900}])">Select Storage</button>
+                            <button class="btn-secondary" onclick="viewProduct('iphone-13-pro-max')">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="iPhone 13 Pro Max.jpg" alt="iPhone 13 Pro">
+                        <h3>iPhone 13 Pro</h3>
+                        <div class="storage-options">
+                            <div class="storage-option">
+                                <span class="storage">128GB</span>
+                                <span class="price">₵7,400</span>
+                            </div>
+                            <div class="storage-option">
+                                <span class="storage">256GB</span>
+                                <span class="price">₵7,900</span>
+                            </div>
+                        </div>
+                        <p class="description">6.1" display, A15 Bionic chip, ProMotion</p>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="showStorageModal('iphone-13-pro', 'iPhone 13 Pro', [{'128GB': 7400}, {'256GB': 7900}])">Select Storage</button>
+                            <button class="btn-secondary" onclick="viewProduct('iphone-13-pro')">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="iPhone 13.jpg" alt="iPhone 13">
+                        <h3>iPhone 13</h3>
+                        <div class="storage-options">
+                            <div class="storage-option">
+                                <span class="storage">128GB</span>
+                                <span class="price">₵5,800</span>
+                            </div>
+                        </div>
+                        <p class="description">6.1" display, A15 Bionic chip, Dual camera</p>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="addToCart('iphone-13-128gb', 'iPhone 13 (128GB)', 5800)">Add to Cart</button>
+                            <button class="btn-secondary" onclick="viewProduct('iphone-13')">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- iPhone 12 Series -->
+                    <div class="product-card">
+                        <img src="iPhone 12 Pro Max.jpg" alt="iPhone 12 Pro Max">
+                        <h3>iPhone 12 Pro Max</h3>
+                        <div class="storage-options">
+                            <div class="storage-option">
+                                <span class="storage">128GB</span>
+                                <span class="price">₵7,200</span>
+                            </div>
+                        </div>
+                        <p class="description">6.7" display, A14 Bionic chip, Pro camera</p>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="addToCart('iphone-12-pro-max-128gb', 'iPhone 12 Pro Max (128GB)', 7200)">Add to Cart</button>
+                            <button class="btn-secondary" onclick="viewProduct('iphone-12-pro-max')">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="iPhone 12 Pro.jpg" alt="iPhone 12 Pro">
+                        <h3>iPhone 12 Pro</h3>
+                        <div class="storage-options">
+                            <div class="storage-option">
+                                <span class="storage">128GB</span>
+                                <span class="price">₵5,400</span>
+                            </div>
+                            <div class="storage-option">
+                                <span class="storage">256GB</span>
+                                <span class="price">₵5,900</span>
+                            </div>
+                        </div>
+                        <p class="description">6.1" display, A14 Bionic chip, Pro camera</p>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="showStorageModal('iphone-12-pro', 'iPhone 12 Pro', [{'128GB': 5400}, {'256GB': 5900}])">Select Storage</button>
+                            <button class="btn-secondary" onclick="viewProduct('iphone-12-pro')">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="iPhone 12.jpg" alt="iPhone 12">
+                        <h3>iPhone 12</h3>
+                        <div class="storage-options">
+                            <div class="storage-option">
+                                <span class="storage">64GB</span>
+                                <span class="price">₵4,400</span>
+                            </div>
+                            <div class="storage-option">
+                                <span class="storage">128GB</span>
+                                <span class="price">₵4,900</span>
+                            </div>
+                        </div>
+                        <p class="description">6.1" display, A14 Bionic chip, Dual camera</p>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="showStorageModal('iphone-12', 'iPhone 12', [{'64GB': 4400}, {'128GB': 4900}])">Select Storage</button>
+                            <button class="btn-secondary" onclick="viewProduct('iphone-12')">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- iPhone 11 Series -->
+                    <div class="product-card">
+                        <img src="iPhone 11 Pro Max.jpg" alt="iPhone 11 Pro Max">
+                        <h3>iPhone 11 Pro Max</h3>
+                        <div class="storage-options">
+                            <div class="storage-option">
+                                <span class="storage">64GB</span>
+                                <span class="price">₵4,900</span>
+                            </div>
+                            <div class="storage-option">
+                                <span class="storage">256GB</span>
+                                <span class="price">₵5,600</span>
+                            </div>
+                        </div>
+                        <p class="description">6.5" display, A13 Bionic chip, Triple camera</p>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="showStorageModal('iphone-11-pro-max', 'iPhone 11 Pro Max', [{'64GB': 4900}, {'256GB': 5600}])">Select Storage</button>
+                            <button class="btn-secondary" onclick="viewProduct('iphone-11-pro-max')">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="iPhone 11 Pro.jpg" alt="iPhone 11 Pro">
+                        <h3>iPhone 11 Pro</h3>
+                        <div class="storage-options">
+                            <div class="storage-option">
+                                <span class="storage">64GB</span>
+                                <span class="price">₵4,200</span>
+                            </div>
+                            <div class="storage-option">
+                                <span class="storage">256GB</span>
+                                <span class="price">₵4,800</span>
+                            </div>
+                        </div>
+                        <p class="description">5.8" display, A13 Bionic chip, Triple camera</p>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="showStorageModal('iphone-11-pro', 'iPhone 11 Pro', [{'64GB': 4200}, {'256GB': 4800}])">Select Storage</button>
+                            <button class="btn-secondary" onclick="viewProduct('iphone-11-pro')">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="iPhone 11.jpg" alt="iPhone 11">
+                        <h3>iPhone 11</h3>
+                        <div class="storage-options">
+                            <div class="storage-option">
+                                <span class="storage">64GB</span>
+                                <span class="price">₵3,300</span>
+                            </div>
+                            <div class="storage-option">
+                                <span class="storage">128GB</span>
+                                <span class="price">₵3,800</span>
+                            </div>
+                        </div>
+                        <p class="description">6.1" display, A13 Bionic chip, Dual camera</p>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="showStorageModal('iphone-11', 'iPhone 11', [{'64GB': 3300}, {'128GB': 3800}])">Select Storage</button>
+                            <button class="btn-secondary" onclick="viewProduct('iphone-11')">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- iPhone XR and X -->
+                    <div class="product-card">
+                        <img src="iPhone XR.jpg" alt="iPhone XR">
+                        <h3>iPhone XR</h3>
+                        <div class="storage-options">
+                            <div class="storage-option">
+                                <span class="storage">64GB</span>
+                                <span class="price">₵2,550</span>
+                            </div>
+                            <div class="storage-option">
+                                <span class="storage">128GB</span>
+                                <span class="price">₵2,950</span>
+                            </div>
+                        </div>
+                        <p class="description">6.1" display, A12 Bionic chip, Single camera</p>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="showStorageModal('iphone-xr', 'iPhone XR', [{'64GB': 2550}, {'128GB': 2950}])">Select Storage</button>
+                            <button class="btn-secondary" onclick="viewProduct('iphone-xr')">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="iPhone X.jpg" alt="iPhone X">
+                        <h3>iPhone X</h3>
+                        <div class="storage-options">
+                            <div class="storage-option">
+                                <span class="storage">64GB</span>
+                                <span class="price">₵2,300</span>
+                            </div>
+                            <div class="storage-option">
+                                <span class="storage">256GB</span>
+                                <span class="price">₵2,600</span>
+                            </div>
+                        </div>
+                        <p class="description">5.8" display, A11 Bionic chip, Face ID</p>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="showStorageModal('iphone-x', 'iPhone X', [{'64GB': 2300}, {'256GB': 2600}])">Select Storage</button>
+                            <button class="btn-secondary" onclick="viewProduct('iphone-x')">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- iPhone 8 Series -->
+                    <div class="product-card">
+                        <img src="iPhone 8 Plus.jpg" alt="iPhone 8 Plus">
+                        <h3>iPhone 8 Plus</h3>
+                        <div class="storage-options">
+                            <div class="storage-option">
+                                <span class="storage">64GB</span>
+                                <span class="price">₵1,900</span>
+                            </div>
+                        </div>
+                        <p class="description">5.5" display, A11 Bionic chip, Dual camera</p>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="addToCart('iphone-8-plus-64gb', 'iPhone 8 Plus (64GB)', 1900)">Add to Cart</button>
+                            <button class="btn-secondary" onclick="viewProduct('iphone-8-plus')">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="iPhone 8.jpg" alt="iPhone 8">
+                        <h3>iPhone 8</h3>
+                        <div class="storage-options">
+                            <div class="storage-option">
+                                <span class="storage">64GB</span>
+                                <span class="price">₵1,500</span>
+                            </div>
+                        </div>
+                        <p class="description">4.7" display, A11 Bionic chip, Single camera</p>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="addToCart('iphone-8-64gb', 'iPhone 8 (64GB)', 1500)">Add to Cart</button>
+                            <button class="btn-secondary" onclick="viewProduct('iphone-8')">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- iPhone 7 Series -->
+                    <div class="product-card">
+                        <img src="iPhone 7 Plus.jpg" alt="iPhone 7 Plus">
+                        <h3>iPhone 7 Plus</h3>
+                        <div class="storage-options">
+                            <div class="storage-option">
+                                <span class="storage">32GB</span>
+                                <span class="price">₵1,400</span>
+                            </div>
+                            <div class="storage-option">
+                                <span class="storage">128GB</span>
+                                <span class="price">₵1,600</span>
+                            </div>
+                        </div>
+                        <p class="description">5.5" display, A10 Fusion chip, Dual camera</p>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="showStorageModal('iphone-7-plus', 'iPhone 7 Plus', [{'32GB': 1400}, {'128GB': 1600}])">Select Storage</button>
+                            <button class="btn-secondary" onclick="viewProduct('iphone-7-plus')">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="iPhone 7.jpg" alt="iPhone 7">
+                        <h3>iPhone 7</h3>
+                        <div class="storage-options">
+                            <div class="storage-option">
+                                <span class="storage">32GB</span>
+                                <span class="price">₵1,100</span>
+                            </div>
+                        </div>
+                        <p class="description">4.7" display, A10 Fusion chip, Single camera</p>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="addToCart('iphone-7-32gb', 'iPhone 7 (32GB)', 1100)">Add to Cart</button>
+                            <button class="btn-secondary" onclick="viewProduct('iphone-7')">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- iPhone 6s Series -->
+                    <div class="product-card">
+                        <img src="iPhone 6s Plus.jpg" alt="iPhone 6s Plus">
+                        <h3>iPhone 6s Plus</h3>
+                        <div class="storage-options">
+                            <div class="storage-option">
+                                <span class="storage">64GB</span>
+                                <span class="price">₵1,100</span>
+                            </div>
+                        </div>
+                        <p class="description">5.5" display, A9 chip, 3D Touch</p>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="addToCart('iphone-6s-plus-64gb', 'iPhone 6s Plus (64GB)', 1100)">Add to Cart</button>
+                            <button class="btn-secondary" onclick="viewProduct('iphone-6s-plus')">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="iPhone 6s.jpg" alt="iPhone 6s">
+                        <h3>iPhone 6s</h3>
+                        <div class="storage-options">
+                            <div class="storage-option">
+                                <span class="storage">32GB</span>
+                                <span class="price">₵850</span>
+                            </div>
+                            <div class="storage-option">
+                                <span class="storage">64GB</span>
+                                <span class="price">₵950</span>
+                            </div>
+                        </div>
+                        <p class="description">4.7" display, A9 chip, 3D Touch</p>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="showStorageModal('iphone-6s', 'iPhone 6s', [{'32GB': 850}, {'64GB': 950}])">Select Storage</button>
+                            <button class="btn-secondary" onclick="viewProduct('iphone-6s')">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- iPhone 5s -->
+                    <div class="product-card">
+                        <img src="iPhone 5s.jpg" alt="iPhone 5s">
+                        <h3>iPhone 5s</h3>
+                        <div class="storage-options">
+                            <div class="storage-option">
+                                <span class="storage">16GB</span>
+                                <span class="price">₵450</span>
+                            </div>
+                        </div>
+                        <p class="description">4" display, A7 chip, Touch ID</p>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="addToCart('iphone-5s-16gb', 'iPhone 5s (16GB)', 450)">Add to Cart</button>
+                            <button class="btn-secondary" onclick="viewProduct('iphone-5s')">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="iphones.html">iPhone</a></li>
+                        <li><a href="laptops.html">Laptops</a></li>
+                        <li><a href="accessories.html">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Warranty</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="admin.html">Admin</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dealers Price LTD. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Storage Selection Modal -->
+    <div id="storage-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="storage-modal-title">Select Storage</h2>
+            <div id="storage-options-container"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="iphone-storage.js"></script>
+</body>
+</html>

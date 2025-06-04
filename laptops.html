@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptops - Dealers Price LTD</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <p>Dealers Price LTD</p>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="iphones.html">iPhone</a></li>
+                    <li><a href="laptops.html" class="active">Laptops</a></li>
+                    <li><a href="accessories.html">Accessories</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li>
+                        <div class="header-icons">
+                            <a href="#" id="search-icon"><i class="fas fa-search"></i></a>
+                            <a href="cart.html" id="cart-icon"><i class="fas fa-shopping-cart"></i><span id="cart-count">0</span></a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>HP EliteBook Laptops</h1>
+                <p>🔥 NEW ARRIVALS - Premium Business Laptops</p>
+                <p class="currency-note">All prices in Ghana Cedis (₵) - Dealer Prices</p>
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="container">
+                <div class="availability-notice">
+                    <h2>✅ AVAILABLE NOW - NEW ARRIVALS 🔥</h2>
+                    <p>All laptops come with solid battery and original charger 🔌</p>
+                </div>
+                
+                <div class="product-grid">
+                    <!-- HP EliteBook 840 G3 -->
+                    <div class="product-card">
+                        <div class="availability-badge available">Available</div>
+                        <img src="HP EliteBook 840 G3.jpg" alt="HP EliteBook 840 G3">
+                        <h3>HP EliteBook 840 G3</h3>
+                        <div class="specs">
+                            <p><strong>Intel i5-6th Gen</strong></p>
+                            <p>256GB SSD / 8GB RAM</p>
+                            <p>✨ Keyboard Light / Fingerprint</p>
+                            <p>🔋 Solid Battery / Original Charger</p>
+                        </div>
+                        <p class="price">₵2,950</p>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="addToCart('hp-840-g3', 'HP EliteBook 840 G3', 2950)">Add to Cart</button>
+                            <button class="btn-secondary" onclick="viewProduct('hp-840-g3')">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- HP EliteBook 840 G3 Glass Touch -->
+                    <div class="product-card">
+                        <div class="availability-badge available">Available</div>
+                        <div class="feature-badge">Glass Touch</div>
+                        <img src="HP EliteBook 840 G3 Glass Touch.jpg" alt="HP EliteBook 840 G3 Glass Touch">
+                        <h3>HP EliteBook 840 G3 Glass Touch</h3>
+                        <div class="specs">
+                            <p><strong>Intel i5-6th Gen</strong></p>
+                            <p>256GB SSD / 8GB RAM</p>
+                            <p>👆 Glass Touch Screen</p>
+                            <p>✨ Keyboard Light / Fingerprint</p>
+                            <p>🔋 Solid Battery / Original Charger</p>
+                        </div>
+                        <p class="price">₵3,250</p>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="addToCart('hp-840-g3-touch', 'HP EliteBook 840 G3 Glass Touch', 3250)">Add to Cart</button>
+                            <button class="btn-secondary" onclick="viewProduct('hp-840-g3-touch')">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- HP EliteBook 840 G4 Glass Touch -->
+                    <div class="product-card">
+                        <div class="availability-badge available">Available</div>
+                        <div class="feature-badge">Glass Touch</div>
+                        <img src="HP EliteBook 840 G4 Glass Touch.jpg" alt="HP EliteBook 840 G4 Glass Touch">
+                        <h3>HP EliteBook 840 G4 Glass Touch</h3>
+                        <div class="specs">
+                            <p><strong>Intel i5-7th Gen</strong></p>
+                            <p>256GB SSD / 8GB RAM</p>
+                            <p>👆 Glass Touch Screen</p>
+                            <p>✨ Keyboard Light / Fingerprint</p>
+                            <p>🔋 Solid Battery / Original Charger</p>
+                        </div>
+                        <p class="price">₵3,650</p>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="addToCart('hp-840-g4-touch', 'HP EliteBook 840 G4 Glass Touch', 3650)">Add to Cart</button>
+                            <button class="btn-secondary" onclick="viewProduct('hp-840-g4-touch')">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- HP EliteBook 840 G5/G6 -->
+                    <div class="product-card">
+                        <div class="availability-badge available">Available</div>
+                        <img src="HP EliteBook 840 G6.jpg" alt="HP EliteBook 840 G5/G6">
+                        <h3>HP EliteBook 840 G5/G6</h3>
+                        <div class="specs">
+                            <p><strong>Intel i5-8th Gen</strong></p>
+                            <p>256GB SSD / 8GB RAM</p>
+                            <p>✨ Keyboard Light / Face ID</p>
+                            <p>🔋 Solid Battery / Original Charger</p>
+                        </div>
+                        <p class="price">₵3,700</p>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="addToCart('hp-840-g5-g6', 'HP EliteBook 840 G5/G6', 3700)">Add to Cart</button>
+                            <button class="btn-secondary" onclick="viewProduct('hp-840-g5-g6')">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- HP EliteBook 840 G5 Glass Touch -->
+                    <div class="product-card">
+                        <div class="availability-badge available">Available</div>
+                        <div class="feature-badge">Glass Touch</div>
+                        <img src="HP EliteBook 840 G5 Glass Touch.webp" alt="HP EliteBook 840 G5 Glass Touch">
+                        <h3>HP EliteBook 840 G5 Glass Touch</h3>
+                        <div class="specs">
+                            <p><strong>Intel i5-8th Gen</strong></p>
+                            <p>256GB SSD / 8GB RAM</p>
+                            <p>👆 Glass Touch Screen</p>
+                            <p>✨ Keyboard Light / Face ID</p>
+                            <p>🔋 Solid Battery / Original Charger</p>
+                        </div>
+                        <p class="price">₵4,250</p>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="addToCart('hp-840-g5-touch', 'HP EliteBook 840 G5 Glass Touch', 4250)">Add to Cart</button>
+                            <button class="btn-secondary" onclick="viewProduct('hp-840-g5-touch')">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- HP EliteBook 1030 G2 X360 -->
+                    <div class="product-card premium">
+                        <div class="availability-badge limited">Limited</div>
+                        <div class="feature-badge">X360 Touch</div>
+                        <img src="HP EliteBook 1030 G2 X360.jpg" alt="HP EliteBook 1030 G2 X360">
+                        <h3>HP EliteBook 1030 G2 X360</h3>
+                        <div class="specs">
+                            <p><strong>Intel i5-7th Gen</strong></p>
+                            <p>256GB SSD / 8GB RAM</p>
+                            <p>🔄 Touch X360 Convertible</p>
+                            <p>✨ Keyboard Light / Face ID</p>
+                            <p>🔋 Solid Battery / Original Charger</p>
+                        </div>
+                        <p class="price">₵4,850</p>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="addToCart('hp-1030-g2-x360', 'HP EliteBook 1030 G2 X360', 4850)">Add to Cart</button>
+                            <button class="btn-secondary" onclick="viewProduct('hp-1030-g2-x360')">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- HP EliteBook 1030 G3/G4 X360 (i5, 8GB) -->
+                    <div class="product-card premium">
+                        <div class="availability-badge available">Available</div>
+                        <div class="feature-badge">X360 Touch</div>
+                        <img src="HP EliteBook 1030 G4 X360.jpg" alt="HP EliteBook 1030 G3/G4 X360">
+                        <h3>HP EliteBook 1030 G3/G4 X360</h3>
+                        <div class="specs">
+                            <p><strong>Intel i5-8th Gen</strong></p>
+                            <p>256GB SSD / 8GB RAM</p>
+                            <p>🔄 Touch X360 Convertible</p>
+                            <p>✨ Face ID / Keyboard Light</p>
+                            <p>🔋 Solid Battery / Original Charger</p>
+                        </div>
+                        <p class="price">₵4,950</p>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="addToCart('hp-1030-g3-g4-x360-i5-8gb', 'HP EliteBook 1030 G3/G4 X360 (i5, 8GB)', 4950)">Add to Cart</button>
+                            <button class="btn-secondary" onclick="viewProduct('hp-1030-g3-g4-x360-i5-8gb')">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- HP EliteBook 1030 G2 X360 (i7, 8GB) -->
+                    <div class="product-card premium">
+                        <div class="availability-badge available">Available</div>
+                        <div class="feature-badge">X360 Touch</div>
+                        <img src="HP EliteBook 1030 G2 X360 (i7).webp" alt="HP EliteBook 1030 G2 X360 i7">
+                        <h3>HP EliteBook 1030 G2 X360 (i7)</h3>
+                        <div class="specs">
+                            <p><strong>Intel i7-7th Gen</strong></p>
+                            <p>256GB SSD / 8GB RAM</p>
+                            <p>🔄 Touch X360 Convertible</p>
+                            <p>✨ Keyboard Light / Face ID</p>
+                            <p>🔋 Solid Battery / Original Charger</p>
+                        </div>
+                        <p class="price">₵5,100</p>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="addToCart('hp-1030-g2-x360-i7-8gb', 'HP EliteBook 1030 G2 X360 (i7, 8GB)', 5100)">Add to Cart</button>
+                            <button class="btn-secondary" onclick="viewProduct('hp-1030-g2-x360-i7-8gb')">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- HP EliteBook 1030 G3/G4 X360 (i5, 16GB) -->
+                    <div class="product-card premium">
+                        <div class="availability-badge available">Available</div>
+                        <div class="feature-badge">X360 Touch</div>
+                        <img src="HP EliteBook 1030 G4 X360 16GB.jpg" alt="HP EliteBook 1030 G3/G4 X360 16GB">
+                        <h3>HP EliteBook 1030 G3/G4 X360</h3>
+                        <div class="specs">
+                            <p><strong>Intel i5-8th Gen</strong></p>
+                            <p>256GB SSD / 16GB RAM</p>
+                            <p>🔄 Touch X360 Convertible</p>
+                            <p>✨ Face ID / Keyboard Light</p>
+                            <p>🔋 Solid Battery / Original Charger</p>
+                        </div>
+                        <p class="price">₵5,200</p>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="addToCart('hp-1030-g3-g4-x360-i5-16gb', 'HP EliteBook 1030 G3/G4 X360 (i5, 16GB)', 5200)">Add to Cart</button>
+                            <button class="btn-secondary" onclick="viewProduct('hp-1030-g3-g4-x360-i5-16gb')">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- HP EliteBook 1030 G2 X360 (i7, 16GB) -->
+                    <div class="product-card premium">
+                        <div class="availability-badge available">Available</div>
+                        <div class="feature-badge">X360 Touch</div>
+                        <img src="HP EliteBook 1030 G3 X360 (i7).jpg" alt="HP EliteBook 1030 G2 X360 i7 16GB">
+                        <h3>HP EliteBook 1030 G2 X360 (i7)</h3>
+                        <div class="specs">
+                            <p><strong>Intel i7-7th Gen</strong></p>
+                            <p>256GB SSD / 16GB RAM</p>
+                            <p>🔄 Touch X360 Convertible</p>
+                            <p>✨ Keyboard Light / Face ID</p>
+                            <p>🔋 Solid Battery / Original Charger</p>
+                        </div>
+                        <p class="price">₵5,280</p>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="addToCart('hp-1030-g2-x360-i7-16gb', 'HP EliteBook 1030 G2 X360 (i7, 16GB)', 5280)">Add to Cart</button>
+                            <button class="btn-secondary" onclick="viewProduct('hp-1030-g2-x360-i7-16gb')">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- HP EliteBook 1040 G6 X360 -->
+                    <div class="product-card premium">
+                        <div class="availability-badge limited">Limited</div>
+                        <div class="feature-badge">X360 Touch</div>
+                        <img src="HP EliteBook 1040 G6 X360.jpg" alt="HP EliteBook 1040 G6 X360">
+                        <h3>HP EliteBook 1040 G6 X360</h3>
+                        <div class="specs">
+                            <p><strong>Intel i5-8th Gen</strong></p>
+                            <p>512GB SSD / 16GB RAM</p>
+                            <p>🔄 Touch X360 Convertible</p>
+                            <p>✨ Face ID / Keyboard Light</p>
+                            <p>🔋 Solid Battery / Original Charger</p>
+                        </div>
+                        <p class="price">₵5,550</p>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="addToCart('hp-1040-g6-x360', 'HP EliteBook 1040 G6 X360', 5550)">Add to Cart</button>
+                            <button class="btn-secondary" onclick="viewProduct('hp-1040-g6-x360')">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- HP EliteBook 1030 G4 X360 (i7, 512GB) -->
+                    <div class="product-card premium">
+                        <div class="availability-badge available">Available</div>
+                        <div class="feature-badge">X360 Touch</div>
+                        <img src="HP EliteBook 1030 G4 X360 1.jpg" alt="HP EliteBook 1030 G4 X360 i7">
+                        <h3>HP EliteBook 1030 G4 X360</h3>
+                        <div class="specs">
+                            <p><strong>Intel i7-8th Gen</strong></p>
+                            <p>512GB SSD / 16GB RAM</p>
+                            <p>🔄 Touch X360 Convertible</p>
+                            <p>✨ Face ID / Keyboard Light</p>
+                            <p>🔋 Solid Battery / Original Charger</p>
+                        </div>
+                        <p class="price">₵6,000</p>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="addToCart('hp-1030-g4-x360-i7', 'HP EliteBook 1030 G4 X360 (i7)', 6000)">Add to Cart</button>
+                            <button class="btn-secondary" onclick="viewProduct('hp-1030-g4-x360-i7')">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- HP EliteBook 1040 G7 X360 -->
+                    <div class="product-card premium featured">
+                        <div class="availability-badge available">Available</div>
+                        <div class="feature-badge">Latest Gen</div>
+                        <img src="HP EliteBook 1040 G7 X360.jpg" alt="HP EliteBook 1040 G7 X360">
+                        <h3>HP EliteBook 1040 G7 X360</h3>
+                        <div class="specs">
+                            <p><strong>Intel i7-10th Gen</strong></p>
+                            <p>512GB SSD / 16GB RAM</p>
+                            <p>🔄 Touch X360 Convertible</p>
+                            <p>✨ Face ID / Keyboard Light</p>
+                            <p>🔋 Solid Battery / Original Charger</p>
+                        </div>
+                        <p class="price">₵6,800</p>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="addToCart('hp-1040-g7-x360', 'HP EliteBook 1040 G7 X360', 6800)">Add to Cart</button>
+                            <button class="btn-secondary" onclick="viewProduct('hp-1040-g7-x360')">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="iphones.html">iPhone</a></li>
+                        <li><a href="laptops.html">Laptops</a></li>
+                        <li><a href="accessories.html">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="admin.html">Admin</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dealers Price LTD. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Dealers Price LTD</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <!-- Login Form -->
+    <div id="admin-login" class="admin-login-container">
+        <div class="admin-login-form">
+            <h2>Admin Login</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="admin-username">Username</label>
+                    <input type="text" id="admin-username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="admin-password">Password</label>
+                    <input type="password" id="admin-password" name="password" required>
+                </div>
+                <button type="submit" class="btn-primary">Login</button>
+                <div id="login-error" class="login-error" style="display: none;">
+                    Invalid username or password
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Admin Dashboard (hidden by default) -->
+    <div id="admin-dashboard" class="admin-container" style="display: none;">
+        <!-- Keep all existing admin dashboard content here -->
+        <div class="admin-sidebar">
+            <div class="admin-logo">
+                <h1>Dealers Price LTD</h1>
+            </div>
+            <nav class="admin-nav">
+                <ul>
+                    <li><a href="#dashboard" class="nav-link active" onclick="showSection('dashboard')">Dashboard</a></li>
+                    <li><a href="#orders" class="nav-link" onclick="showSection('orders')">Orders</a></li>
+                    <li><a href="#messages" class="nav-link" onclick="showSection('messages')">Messages</a></li>
+                    <li><a href="#products" class="nav-link" onclick="showSection('products')">Products</a></li>
+                    <li><a href="#" class="nav-link" onclick="logout()">Logout</a></li>
+                    <li><a href="index.html" class="nav-link">Back to Store</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="admin-main">
+            <header class="admin-header">
+                <h1 id="section-title">Dashboard</h1>
+                <div class="admin-user">
+                    <span>Welcome, Admin</span>
+                    <button class="btn-secondary" onclick="logout()" style="margin-left: 1rem;">Logout</button>
+                </div>
+            </header>
+
+            <!-- Keep all existing admin sections here -->
+            <main class="admin-content">
+                <!-- Dashboard Section -->
+                <section id="dashboard" class="admin-section active">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <h3>Total Orders</h3>
+                            <p class="stat-number" id="total-orders">0</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>Total Revenue</h3>
+                            <p class="stat-number" id="total-revenue">₵0</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>New Messages</h3>
+                            <p class="stat-number" id="new-messages">0</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>Pending Orders</h3>
+                            <p class="stat-number" id="pending-orders">0</p>
+                        </div>
+                    </div>
+
+                    <div class="recent-activity">
+                        <h3>Recent Activity</h3>
+                        <div class="activity-list" id="recent-activity">
+                            <p>No recent activity</p>
+                        </div>
+                    </div>
+
+                    <div class="quick-actions">
+                        <h3>Quick Actions</h3>
+                        <div class="action-buttons">
+                            <button class="btn-primary" onclick="showSection('orders')">View Orders</button>
+                            <button class="btn-primary" onclick="showSection('messages')">Check Messages</button>
+                            <button class="btn-primary" onclick="showSection('products')">Manage Products</button>
+                            <button class="btn-secondary" onclick="exportOrders()">Export Orders</button>
+                        </div>
+                    </div>
+
+                    <div class="delivery-stats">
+                        <h3>Campus Delivery Stats</h3>
+                        <div class="campus-stats">
+                            <div class="stat-item">
+                                <h4>Pending Deliveries</h4>
+                                <p id="pending-deliveries">0</p>
+                            </div>
+                            <div class="stat-item">
+                                <h4>Completed Today</h4>
+                                <p id="completed-today">0</p>
+                            </div>
+                            <div class="stat-item">
+                                <h4>Campus Orders</h4>
+                                <p id="campus-orders">0</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Orders Section -->
+                <section id="orders" class="admin-section">
+                    <div class="section-header">
+                        <h3>Order Management</h3>
+                        <div class="order-filters">
+                            <select id="order-status-filter" onchange="filterOrders()">
+                                <option value="">All Orders</option>
+                                <option value="pending">Pending</option>
+                                <option value="processing">Processing</option>
+                                <option value="shipped">Shipped</option>
+                                <option value="delivered">Delivered</option>
+                                <option value="cancelled">Cancelled</option>
+                            </select>
+                            <button class="btn-secondary" onclick="exportOrders()">Export Orders</button>
+                        </div>
+                    </div>
+                    <div class="table-container">
+                        <table class="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>Order ID</th>
+                                    <th>Customer</th>
+                                    <th>Phone</th>
+                                    <th>Products</th>
+                                    <th>Total</th>
+                                    <th>Date</th>
+                                    <th>Status</th>
+                                    <th>Delivery</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="orders-table">
+                                <tr>
+                                    <td colspan="9">No orders found</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- Messages Section -->
+                <section id="messages" class="admin-section">
+                    <div class="section-header">
+                        <h3>Customer Messages</h3>
+                        <button class="btn-secondary" onclick="markAllRead()">Mark All Read</button>
+                    </div>
+                    <div class="messages-container">
+                        <div class="messages-list" id="messages-list">
+                            <p>No messages found</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Products Section -->
+                <section id="products" class="admin-section">
+                    <div class="section-header">
+                        <h3>Product Management</h3>
+                        <button class="btn-primary" onclick="addProduct()">Add Product</button>
+                    </div>
+                    <div class="products-grid" id="products-grid">
+                        <!-- Products will be loaded here -->
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <!-- Keep all existing modals -->
+    <!-- Order Details Modal -->
+    <div id="order-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Order Details</h2>
+            <div id="order-details"></div>
+            <div class="modal-actions">
+                <select id="order-status">
+                    <option value="pending">Pending</option>
+                    <option value="processing">Processing</option>
+                    <option value="shipped">Shipped</option>
+                    <option value="delivered">Delivered</option>
+                    <option value="cancelled">Cancelled</option>
+                </select>
+                <button class="btn-primary" onclick="updateOrderStatus()">Update Status</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Message Details Modal -->
+    <div id="message-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Message Details</h2>
+            <div id="message-details"></div>
+            <div class="modal-actions">
+                <button class="btn-primary" onclick="replyToMessage()">Reply</button>
+                <button class="btn-secondary" onclick="deleteMessage()">Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>
+<script>
+    // Show the login form by default
+    document.getElementById('admin-login').style.display = 'block';
+    document.getElementById('admin-dashboard').style.display = 'none';
+
+    // Handle login form submission
+    document.getElementById('login-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const username = document.getElementById('admin-username').value;
+        const password = document.getElementById('admin-password').value;
+
+        // Simulate a login check (replace with actual authentication logic)
+        if (username === 'admin' && password === 'password') {
+            document.getElementById('admin-login').style.display = 'none';
+            document.getElementById('admin-dashboard').style.display = 'block';
+            loadDashboardData();
+        } else {
+            document.getElementById('login-error').style.display = 'block';
+        }
+    });
+
+    // Function to load dashboard data
+    function loadDashboardData() {
+        // Simulate loading data (replace with actual data fetching logic)
+        document.getElementById('total-orders').textContent = '100';
+        document.getElementById('total-revenue').textContent = '₵50,000';
+        document.getElementById('new-messages').textContent = '5';
+        document.getElementById('pending-orders').textContent = '10';
+        document.getElementById('pending-deliveries').textContent = '3';
+        document.getElementById('completed-today').textContent = '7';
+        document.getElementById('campus-orders').textContent = '20';
+
+        // Load recent activity
+        const activityList = document.getElementById('recent-activity');
+        activityList.innerHTML = '<p>Order #1234 placed</p><p>Message from user John Doe</p>'}

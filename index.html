@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dealers Price LTD</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <p>Dealers Price LTD</p>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="iphones.html">iPhone</a></li>
+                    <li><a href="laptops.html">Laptops</a></li>
+                    <li><a href="accessories.html">Accessories</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li>
+                        <div class="header-icons">
+                            <a href="cart.html" id="cart-icon"><i class="fas fa-shopping-cart"></i><span id="cart-count">0</span></a>
+                            <a href="#" id="search-icon"><i class="fas fa-search"></i></a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Best Deals on Used Devices</h1>
+                <p>Get the best prices on quality used iPhones, Laptops and Accessories.</p>
+                <div class="hero-buttons">
+                    <a href="iphones.html" class="btn-primary">Shop iPhone</a>
+                    <a href="#" class="btn-secondary">Learn more</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="iphone16.jpg" alt="iPhone 16 ">
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <div class="container">
+                <h2>Featured Products</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-badge">Latest</div>
+                        <img src="iphone16promax.jpg" alt="iPhone 16 Pro Max">
+                        <h3>iPhone 16 Pro Max</h3>
+                        <p class="price">From ₵22,800</p>
+                        <button class="btn-primary" onclick="window.location.href='iphones.html'">Shop Now</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-badge">New</div>
+                        <img src="HP EliteBook 1040 G7.webp" alt="HP EliteBook 1040 G7">
+                        <h3>HP EliteBook 1040 G7 X360</h3>
+                        <p class="price">₵6,800</p>
+                        <button class="btn-primary" onclick="window.location.href='laptops.html'">Shop Now</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-badge">Popular</div>
+                        <img src="AirPods 4.webp" alt="AirPods 4">
+                        <h3>AirPods 4</h3>
+                        <p class="price">₵260</p>
+                        <button class="btn-primary" onclick="window.location.href='accessories.html'">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories">
+            <div class="container">
+                <h2>Shop by Category</h2>
+                <div class="category-grid">
+                    <a href="iphones.html" class="category-card">
+                        <img src="iphoness.jpg" alt="iPhones">
+                        <h3>iPhones</h3>
+                        <p>UK Used iPhone models from 5s to 16 Pro Max</p>
+                    </a>
+                    <a href="laptops.html" class="category-card">
+                        <img src="HP EliteBooks.jpg" alt="Laptops">
+                        <h3>HP EliteBooks</h3>
+                        <p>Premium business laptops - New arrivals</p>
+                    </a>
+                    <a href="accessories.html" class="category-card">
+                        <img src="accessories.jpg" alt="Accessories">
+                        <h3>Accessories</h3>
+                        <p>Chargers, AirPods, Nokia phones & more</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="promo-banner">
+            <div class="container">
+                <div class="promo-content">
+                    <h2>Free Delivery on Campus!</h2>
+                    <p>Enjoy free delivery for all orders to University of Ghana campus</p>
+                    <a href="contact.html" class="btn-primary">Contact Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="iphones.html">iPhone</a></li>
+                        <li><a href="laptops.html">Laptops</a></li>
+                        <li><a href="accessories.html">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Warranty</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="admin.html">Admin</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dealers Price LTD. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

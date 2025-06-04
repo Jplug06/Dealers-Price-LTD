@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessories - Dealers Price LTD</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <p>Dealers Price LTD</p>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="iphones.html">iPhone</a></li>
+                    <li><a href="laptops.html">Laptops</a></li>
+                    <li><a href="accessories.html" class="active">Accessories</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li>
+                        <div class="header-icons">
+                            <a href="#" id="search-icon"><i class="fas fa-search"></i></a>
+                            <a href="cart.html" id="cart-icon"><i class="fas fa-shopping-cart"></i><span id="cart-count">0</span></a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Accessories</h1>
+                <p>Essential accessories for your devices</p>
+                <p class="currency-note">All prices in Ghana Cedis (₵)</p>
+                <div class="delivery-notice">
+                    <p>🚚 <strong>Free delivery on campus (University of Ghana)</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="container">
+                <!-- Chargers Section -->
+                <div class="category-section">
+                    <h2>🔌 Chargers & Cables</h2>
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <img src="Type C Charger (2 Pin).jpg" alt="Type C 2pin Charger">
+                            <h3>Type C Charger (2 Pin)</h3>
+                            <p class="price">₵80</p>
+                            <p class="description">Universal Type C charger with 2-pin plug</p>
+                            <div class="product-actions">
+                                <button class="btn-primary" onclick="addToCart('type-c-2pin', 'Type C Charger (2 Pin)', 80)">Add to Cart</button>
+                                <button class="btn-secondary" onclick="viewProduct('type-c-2pin')">View Details</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="Type C Charger (3 Pin).jpg" alt="Type C 3pin Charger">
+                            <h3>Type C Charger (3 Pin)</h3>
+                            <p class="price">₵90</p>
+                            <p class="description">Universal Type C charger with 3-pin plug</p>
+                            <div class="product-actions">
+                                <button class="btn-primary" onclick="addToCart('type-c-3pin', 'Type C Charger (3 Pin)', 90)">Add to Cart</button>
+                                <button class="btn-secondary" onclick="viewProduct('type-c-3pin')">View Details</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="Charging Corg.jpg" alt="Charging Cord Only">
+                            <h3>Charging Cord Only</h3>
+                            <p class="price">₵40</p>
+                            <p class="description">Replacement charging cable without adapter</p>
+                            <div class="product-actions">
+                                <button class="btn-primary" onclick="addToCart('cord-only', 'Charging Cord Only', 40)">Add to Cart</button>
+                                <button class="btn-secondary" onclick="viewProduct('cord-only')">View Details</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="Charger Head Only (2 Pin).jpg" alt="Charger Head 2pin">
+                            <h3>Charger Head Only (2 Pin)</h3>
+                            <p class="price">₵45</p>
+                            <p class="description">Replacement charger adapter head - 2 pin</p>
+                            <div class="product-actions">
+                                <button class="btn-primary" onclick="addToCart('head-2pin', 'Charger Head Only (2 Pin)', 45)">Add to Cart</button>
+                                <button class="btn-secondary" onclick="viewProduct('head-2pin')">View Details</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="Charger Head Only (3 Pin).jpg" alt="Charger Head 3pin">
+                            <h3>Charger Head Only (3 Pin)</h3>
+                            <p class="price">₵55</p>
+                            <p class="description">Replacement charger adapter head - 3 pin</p>
+                            <div class="product-actions">
+                                <button class="btn-primary" onclick="addToCart('head-3pin', 'Charger Head Only (3 Pin)', 55)">Add to Cart</button>
+                                <button class="btn-secondary" onclick="viewProduct('head-3pin')">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AirPods Section -->
+                <div class="category-section">
+                    <h2>🎧 AirPods & Audio</h2>
+                    <div class="product-grid">
+                        <div class="product-card featured">
+                            <div class="product-badge">Latest</div>
+                            <img src="AirPods 4.webp" alt="AirPods 4">
+                            <h3>AirPods 4</h3>
+                            <p class="price">₵260</p>
+                            <p class="description">Latest generation AirPods with enhanced features</p>
+                            <div class="product-actions">
+                                <button class="btn-primary" onclick="addToCart('airpods-4', 'AirPods 4', 260)">Add to Cart</button>
+                                <button class="btn-secondary" onclick="viewProduct('airpods-4')">View Details</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="AirPods Pro.jpg" alt="AirPods Pro">
+                            <h3>AirPods Pro</h3>
+                            <p class="price">₵200</p>
+                            <p class="description">Active Noise Cancellation, Spatial Audio</p>
+                            <div class="product-actions">
+                                <button class="btn-primary" onclick="addToCart('airpods-pro', 'AirPods Pro', 200)">Add to Cart</button>
+                                <button class="btn-secondary" onclick="viewProduct('airpods-pro')">View Details</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="AirPods 3.jpg" alt="AirPods 3">
+                            <h3>AirPods 3</h3>
+                            <p class="price">₵190</p>
+                            <p class="description">Spatial Audio, Sweat and water resistant</p>
+                            <div class="product-actions">
+                                <button class="btn-primary" onclick="addToCart('airpods-3', 'AirPods 3', 190)">Add to Cart</button>
+                                <button class="btn-secondary" onclick="viewProduct('airpods-3')">View Details</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="AirPods Pro 2G.jpg" alt="AirPods Pro 2G">
+                            <h3>AirPods Pro 2G</h3>
+                            <p class="price">₵180</p>
+                            <p class="description">Second generation AirPods Pro with improved features</p>
+                            <div class="product-actions">
+                                <button class="btn-primary" onclick="addToCart('airpods-pro-2g', 'AirPods Pro 2G', 180)">Add to Cart</button>
+                                <button class="btn-secondary" onclick="viewProduct('airpods-pro-2g')">View Details</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="iPhone Earphone.jpg" alt="iPhone Earphone">
+                            <h3>iPhone Earphone</h3>
+                            <div class="price-options">
+                                <div class="price-option">
+                                    <span class="option-label">Basic</span>
+                                    <span class="price">₵60</span>
+                                </div>
+                                <div class="price-option">
+                                    <span class="option-label">Premium</span>
+                                    <span class="price">₵150</span>
+                                </div>
+                            </div>
+                            <p class="description">Wired iPhone earphones - Basic and Premium options</p>
+                            <div class="product-actions">
+                                <button class="btn-primary" onclick="showEarphoneOptions()">Select Option</button>
+                                <button class="btn-secondary" onclick="viewProduct('iphone-earphone')">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nokia Phones Section -->
+                <div class="category-section">
+                    <h2>📱 Nokia Phones</h2>
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <img src="Nokia 105.jpg" alt="Nokia 105">
+                            <h3>Nokia 105</h3>
+                            <p class="price">₵200</p>
+                            <p class="description">Classic Nokia feature phone with long battery life</p>
+                            <div class="product-actions">
+                                <button class="btn-primary" onclick="addToCart('nokia-105', 'Nokia 105', 200)">Add to Cart</button>
+                                <button class="btn-secondary" onclick="viewProduct('nokia-105')">View Details</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-badge">4G</div>
+                            <img src="Nokia 106 4G.jpg" alt="Nokia 106 4G">
+                            <h3>Nokia 106 4G</h3>
+                            <p class="price">₵220</p>
+                            <p class="description">Nokia feature phone with 4G connectivity</p>
+                            <div class="product-actions">
+                                <button class="btn-primary" onclick="addToCart('nokia-106-4g', 'Nokia 106 4G', 220)">Add to Cart</button>
+                                <button class="btn-secondary" onclick="viewProduct('nokia-106-4g')">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           
+            <!-- WiFi Router Section -->
+                <div class="category-section">
+                    <h2>📶 WiFi Routers & MiFi</h2>
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <img src="Cat 4 Router.jpg" alt="Cat 4 Router">
+                            <h3>Cat 4 Router</h3>
+                            <p class="price">₵550</p>
+                            <p class="description">Standard 4G LTE router for home and small office use</p>
+                            <div class="product-actions">
+                                <button class="btn-primary" onclick="addToCart('cat-4-router', 'Cat 4 Router', 550)">Add to Cart</button>
+                                <button class="btn-secondary" onclick="viewProduct('cat-4-router')">View Details</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="Cat 6 Router.jpg" alt="Cat 6 Router">
+                            <h3>Cat 6 Router</h3>
+                            <p class="price">₵750</p>
+                            <p class="description">Advanced 4G LTE router with higher speeds and better range</p>
+                            <div class="product-actions">
+                                <button class="btn-primary" onclick="addToCart('cat-6-router', 'Cat 6 Router', 750)">Add to Cart</button>
+                                <button class="btn-secondary" onclick="viewProduct('cat-6-router')">View Details</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card featured">
+                            <div class="product-badge">10GB Free</div>
+                            <img src="Turbonet with Data SIM.jpg" alt="Turbonet with Data SIM">
+                            <h3>Turbonet with Data SIM</h3>
+                            <p class="price">₵2,200</p>
+                            <p class="description">High-speed router with included data SIM and 10GB free data</p>
+                            <div class="product-actions">
+                                <button class="btn-primary" onclick="addToCart('turbonet-data-sim', 'Turbonet with Data SIM', 2200)">Add to Cart</button>
+                                <button class="btn-secondary" onclick="viewProduct('turbonet-data-sim')">View Details</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-badge">Universal</div>
+                            <img src="MTN 4G MiFi (Universal).jpg" alt="MTN 4G MiFi">
+                            <h3>MTN 4G MiFi (Universal)</h3>
+                            <p class="price">₵350</p>
+                            <p class="description">Portable 4G WiFi hotspot, works with any SIM card</p>
+                            <div class="product-actions">
+                                <button class="btn-primary" onclick="addToCart('mtn-4g-mifi', 'MTN 4G MiFi (Universal)', 350)">Add to Cart</button>
+                                <button class="btn-secondary" onclick="viewProduct('mtn-4g-mifi')">View Details</button>
+                            </div>
+                        </div>                 
+                    </div>
+                </div>
+            </div>  
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="iphones.html">iPhone</a></li>
+                        <li><a href="laptops.html">Laptops</a></li>
+                        <li><a href="accessories.html">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Warranty</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="admin.html">Admin</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dealers Price LTD. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- iPhone Earphone Options Modal -->
+    <div id="earphone-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Select iPhone Earphone Option</h2>
+            <div class="earphone-options">
+                <button class="option-btn" onclick="addToCart('iphone-earphone-basic', 'iPhone Earphone (Basic)', 60)">
+                    <span class="option-name">Basic iPhone Earphone</span>
+                    <span class="option-price">₵60</span>
+                </button>
+                <button class="option-btn" onclick="addToCart('iphone-earphone-premium', 'iPhone Earphone (Premium)', 150)">
+                    <span class="option-name">Premium iPhone Earphone</span>
+                    <span class="option-price">₵150</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="accessories.js"></script>
+</body>
+</html>
+
